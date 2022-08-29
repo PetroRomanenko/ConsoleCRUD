@@ -10,6 +10,16 @@ public class Writer {
     private String lastName;
     List<Post> posts;
 
+    public Writer() {
+    }
+
+    public Writer(int id, String firstName, String lastName, List<Post> posts) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.posts = posts;
+    }
+
     @Override
     public String toString() {
         return "Writer{" +

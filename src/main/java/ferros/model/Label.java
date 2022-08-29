@@ -1,8 +1,17 @@
 package ferros.model;
 
 public class Label {
-    private int id;
+    private  int id=0;
     private String name;
+
+    public Label() {
+    }
+
+    public Label (int id, String name) {
+        this.id=id;
+        this.name = name;
+    }
+
 
     @Override
     public String toString() {

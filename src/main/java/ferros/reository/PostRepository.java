@@ -2,5 +2,5 @@ package ferros.reository;
 
 import ferros.model.Post;
 
-interface PostRepository extends GenericRepository<Post, Long>{
+public interface PostRepository extends GenericRepository<Post, Integer>{
 }

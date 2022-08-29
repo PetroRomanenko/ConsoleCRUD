@@ -1,9 +1,13 @@
 package ferros.reository;
 
+import java.util.List;
+
 interface GenericRepository <T,ID>{
-    void create();
-    void read();
-    void update();
-    void delete();
+    T getById(ID id);
+    List<T> getAll();
+    T save(T t);
+    T update(T t);
+
+    void deleteById(ID id);
 
 }
