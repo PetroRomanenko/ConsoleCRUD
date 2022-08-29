@@ -1,28 +1,28 @@
 package ferros.reository;
 
-import ferros.model.Writer;
+import ferros.model.Post;
 
 import java.util.List;
 
-public class JsonWriterRepositoryImpl implements WriterRepository {
+public class JsonPostRepositoryImpl implements PostRepository{
 
     @Override
-    public Writer getById(Integer id) {
+    public Post getById(Integer id) {
         return null;
     }
 
     @Override
-    public List<Writer> getAll() {
+    public List<Post> getAll() {
         return null;
     }
 
     @Override
-    public Writer save(Writer writer) {
+    public Post save(Post post) {
         return null;
     }
 
     @Override
-    public Writer update(Writer writer) {
+    public Post update(Post post) {
         return null;
     }
 

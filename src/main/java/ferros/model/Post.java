@@ -9,6 +9,17 @@ public class Post {
     private String updated;
     List<Label> labels;
 
+    public Post() {
+    }
+
+    public Post(int id, String content, String created, String updated, List<Label> labels) {
+        this.id = id;
+        this.content = content;
+        this.created = created;
+        this.updated = updated;
+        this.labels = labels;
+    }
+
     public int getId() {
         return id;
     }
