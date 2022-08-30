@@ -1,6 +1,7 @@
-package ferros.reository;
+package ferros.repository.gson;
 
 import ferros.model.Writer;
+import ferros.repository.WriterRepository;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ferros.reository;
+package ferros.repository;
 
 import ferros.model.Writer;
 

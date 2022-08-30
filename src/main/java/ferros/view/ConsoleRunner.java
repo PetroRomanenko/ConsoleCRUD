@@ -1,14 +1,9 @@
 package ferros.view;
 
-import ferros.controller.LabelController;
-import ferros.reository.*;
-
-import java.util.Scanner;
-
 public class ConsoleRunner {
-    BaseView labelView;
-    BaseView postView;
-    BaseView WriterView;
+    MainView labelView;
+    MainView postView;
+    MainView WriterView;
 
     private final String damagedDataMessage = "Данные повреждены";
 

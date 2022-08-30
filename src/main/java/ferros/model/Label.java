@@ -1,17 +1,31 @@
 package ferros.model;
 
+import java.util.Objects;
+
 public class Label {
-    private  int id=0;
+    private Integer id;
     private String name;
 
     public Label() {
     }
 
-    public Label (int id, String name) {
+    public Label (Integer id, String name) {
         this.id=id;
         this.name = name;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Label label = (Label) o;
+        return id.equals(label.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 
     @Override
     public String toString() {
@@ -21,7 +35,7 @@ public class Label {
                 '}';
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 

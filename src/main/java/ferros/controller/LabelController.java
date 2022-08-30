@@ -1,21 +1,18 @@
 package ferros.controller;
 
 import ferros.model.Label;
+import ferros.repository.LabelRepository;
+import ferros.repository.gson.JsonLabelRepositoryImpl;
 
 import java.util.Scanner;
 
 public class LabelController {
-    //запись лейбла в файл
-    static int count = 0;
-    Scanner   scanner = new Scanner(System.in);
 
-    public Label saveLabelInFile(){
-        System.out.println("Введите название Поста: ");
-        count++;
-        String str = scanner.nextLine();
-        Label label = new Label(1,str);
+    private final LabelRepository labelRepository = new JsonLabelRepositoryImpl();
 
-        return label;
+    public Label saveLabel(String name) {
+        Label label = new Label(null, name);
+        return labelRepository.save(label);
     }
 
 }

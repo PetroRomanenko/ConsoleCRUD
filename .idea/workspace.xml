@@ -5,24 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38d97704-d038-44af-b201-3cbf0db316dd" name="Changes" comment="Добавил слой View и доплнил слой Controller&#10;добавил классы и интерфейсы в слой репозитория">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ferros/view/BaseView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ferros/view/ConsoleRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/controller/LabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/controller/LabelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/json_serelization/Foo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/json_serelization/GenericFoo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Label.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Writer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/GenericRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/reository/GenericRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonLabelRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonLabelRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonPostRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonPostRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonWriterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonWriterRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/LabelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/reository/LabelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/reository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/WriterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/reository/WriterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/GenericRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/GenericRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonLabelRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonPostRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonWriterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonWriterRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/LabelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/LabelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/WriterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/WriterRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/ConsoleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/ConsoleRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/LabelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/LabelView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/labels.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/labels.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/posts.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,17 +65,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Petro/IdeaProjects/ConsoleCRUD/src/main/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/Petro/IdeaProjects/ConsoleCRUD_Refactored"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Petro\IdeaProjects\ConsoleCRUD\src\main\java" />
@@ -77,6 +79,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ferros.Main" />
       <module name="ConsoleCRUD" />
@@ -118,6 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659004062912</updated>
+      <workItem from="1661772286588" duration="1429000" />
     </task>
     <task id="LOCAL-00001" summary="Первый коммит">
       <created>1659005570873</created>
@@ -143,6 +157,9 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -159,5 +176,41 @@
     <MESSAGE value="Добавил 2 файла из примера, если не коментировать тестовые методы то метод стринг не работает" />
     <MESSAGE value="Добавил слой View и доплнил слой Controller&#10;добавил классы и интерфейсы в слой репозитория" />
     <option name="LAST_COMMIT_MESSAGE" value="Добавил слой View и доплнил слой Controller&#10;добавил классы и интерфейсы в слой репозитория" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

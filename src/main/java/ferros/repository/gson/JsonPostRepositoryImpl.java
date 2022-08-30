@@ -1,10 +1,11 @@
-package ferros.reository;
+package ferros.repository.gson;
 
 import ferros.model.Post;
+import ferros.repository.PostRepository;
 
 import java.util.List;
 
-public class JsonPostRepositoryImpl implements PostRepository{
+public class JsonPostRepositoryImpl implements PostRepository {
 
     @Override
     public Post getById(Integer id) {

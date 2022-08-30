@@ -5,19 +5,11 @@ import java.util.List;
 public class Post {
     private int id;
     private String content;
-    private String created;
-    private String updated;
-    List<Label> labels;
+    private Long created;
+    private Long updated;
+    private List<Label> labels;
 
     public Post() {
-    }
-
-    public Post(int id, String content, String created, String updated, List<Label> labels) {
-        this.id = id;
-        this.content = content;
-        this.created = created;
-        this.updated = updated;
-        this.labels = labels;
     }
 
     public int getId() {
@@ -36,19 +28,19 @@ public class Post {
         this.content = content;
     }
 
-    public String getCreated() {
+    public Long getCreated() {
         return created;
     }
 
-    public void setCreated(String created) {
+    public void setCreated(Long created) {
         this.created = created;
     }
 
-    public String getUpdated() {
+    public Long getUpdated() {
         return updated;
     }
 
-    public void setUpdated(String updated) {
+    public void setUpdated(Long updated) {
         this.updated = updated;
     }
 
