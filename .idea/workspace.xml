@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d97704-d038-44af-b201-3cbf0db316dd" name="Changes" comment="Добавил слой View и доплнил слой Controller&#10;добавил классы и интерфейсы в слой репозитория">
+    <list default="true" id="38d97704-d038-44af-b201-3cbf0db316dd" name="Changes" comment="Mentor Changed my project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/controller/LabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/controller/LabelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/json_serelization/Foo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/json_serelization/GenericFoo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/GenericRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/GenericRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonLabelRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonPostRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/JsonWriterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonWriterRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/LabelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/LabelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/reository/WriterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/WriterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/ConsoleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/ConsoleRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/LabelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/LabelView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/labels.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/labels.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/MainView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +79,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ferros.Main" />
-      <module name="ConsoleCRUD" />
+      <module name="ConsoleCRUD_Refactored" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ferros.*" />
@@ -154,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659006977268</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mentor Changed my project">
+      <created>1661841213085</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661841213085</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,16 +169,12 @@
     <MESSAGE value="Первый коммит" />
     <MESSAGE value="Добавил 2 файла из примера, если не коментировать тестовые методы то метод стринг не работает" />
     <MESSAGE value="Добавил слой View и доплнил слой Controller&#10;добавил классы и интерфейсы в слой репозитория" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил слой View и доплнил слой Controller&#10;добавил классы и интерфейсы в слой репозитория" />
+    <MESSAGE value="Mentor Changed my project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mentor Changed my project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java</url>
           <line>23</line>
