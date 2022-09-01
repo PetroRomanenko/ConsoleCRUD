@@ -5,12 +5,10 @@ import com.google.gson.reflect.TypeToken;
 import ferros.model.Label;
 import ferros.repository.LabelRepository;
 
-import java.io.*;
+import java.io.IOException;
 import java.lang.reflect.Type;
-import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
 
 public class JsonLabelRepositoryImpl implements LabelRepository {
@@ -86,5 +84,14 @@ public class JsonLabelRepositoryImpl implements LabelRepository {
         List<Label> labelList = getAllLabelsInternal();
         labelList.removeIf(label -> label.getId().equals(id));
         writeLabelsToFile(labelList);
+    }
+
+    @Override
+    public void printList(List<Label> list) {
+        int count=1;
+        for(Label label:list){
+            System.out.println(count+". "+label);
+            count++;
+        }
     }
 }

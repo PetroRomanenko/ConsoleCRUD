@@ -9,4 +9,6 @@ interface GenericRepository <T,ID>{
     T update(T t);
     void deleteById(ID id);
 
+    void printList(List<T> list);
+
 }

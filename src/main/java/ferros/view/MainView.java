@@ -1,13 +1,18 @@
 package ferros.view;
 
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class MainView {
-    private final Scanner scanner = new Scanner(System.in);
-    private final LabelView labelView = new LabelView();
 
-    private final String damagedDataMessage = "Данные повреждены";
+    private final LabelView labelView = new LabelView();
+    private final PostView postView = new PostView();
+    private final WriterView writerView = new WriterView();
+    private final Scanner scanner = new Scanner(System.in);
+
 
     private final String menuMessage = "Chose action: \n" +
             "1. Label \n" +
@@ -15,26 +20,41 @@ public class MainView {
             "3. Author \n" +
             "4. Exit";
 
-    private final String CRUDMassage = "Chose action: \n"+
-            "1.Create \n"+
-            "2.Show all \n"+
-            "3.Show by ID \n"+
-            "4.Update \n"+
-            "5.Delete "+
-            "6.Exit to previous menu";
+    private final String line = "****************************************";
 
     public void showMainMenu() {
-        System.out.println(menuMessage);
-        int chose = scanner.nextInt();
-        if (chose<1&&chose>5){
-            System.out.println("Enter again: ");
-            chose=scanner.nextInt();
-        }
-        switch (chose){
-            case 1:
-                System.out.println(CRUDMassage);
-                labelView.menuChoice();
-        }
+        int chose;
+        do {
+            System.out.println(line);
+            System.out.println(menuMessage);
+            System.out.println(line);
+//
+//            try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))){
+//                chose = Integer.parseInt(bufferedReader.readLine());
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+            chose = scanner.nextInt();
+
+
+            switch (chose) {
+                case 1:
+                    labelView.menuChoice();
+                    break;
+                case 2:
+                    postView.menuChoice();
+                    break;
+                case 3:
+                    writerView.menuChoice();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Wrong choice, enter again: ");
+            }
+        }while (chose != 4) ;
+
+
     }
 
 

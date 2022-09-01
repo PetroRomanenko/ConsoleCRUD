@@ -20,7 +20,7 @@ public class LabelController {
         return labelRepository.getById(id);
     }
 
-    public List<Label> showAllLabels(){
+    public List<Label> getAllLabels(){
         return labelRepository.getAll();
     }
     public Label update(Label label){
@@ -31,5 +31,7 @@ public class LabelController {
         labelRepository.deleteById(id);
     }
 
-
+    public void printLabelList(List<Label> label){
+        labelRepository.printList(label);
+    }
 }

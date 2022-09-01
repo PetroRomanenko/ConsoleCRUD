@@ -12,6 +12,13 @@ public class Post {
     public Post() {
     }
 
+    public Post(int id, String content, Long created, Long updated) {
+        this.id = id;
+        this.content = content;
+        this.created = created;
+        this.updated = updated;
+    }
+
     public int getId() {
         return id;
     }

@@ -31,4 +31,9 @@ public class JsonWriterRepositoryImpl implements WriterRepository {
     public void deleteById(Integer id) {
 
     }
+
+    @Override
+    public void printList(List<Writer> list) {
+
+    }
 }
