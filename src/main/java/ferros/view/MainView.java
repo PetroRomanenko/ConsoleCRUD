@@ -53,6 +53,8 @@ public class MainView {
                     System.out.println("Wrong choice, enter again: ");
             }
         }while (chose != 4) ;
+        System.out.println("Thanks for using our Application");
+        System.out.println("See you next time!!!!");
 
 
     }

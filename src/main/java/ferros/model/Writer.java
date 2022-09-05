@@ -3,9 +3,10 @@ package ferros.model;
 import ferros.model.Post;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Writer {
-    private int id;
+    private Integer id;
     private String firstName;
     private String lastName;
     List<Post> posts;
@@ -13,7 +14,7 @@ public class Writer {
     public Writer() {
     }
 
-    public Writer(int id, String firstName, String lastName, List<Post> posts) {
+    public Writer(Integer id, String firstName, String lastName, List<Post> posts) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -30,12 +31,27 @@ public class Writer {
                 '}';
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Writer writer = (Writer) o;
+
+        return id.equals(writer.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return  Objects.hash(id);
     }
 
     public String getFirstName() {

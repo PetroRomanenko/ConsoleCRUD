@@ -5,7 +5,6 @@ import ferros.repository.LabelRepository;
 import ferros.repository.gson.JsonLabelRepositoryImpl;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class LabelController {
 
