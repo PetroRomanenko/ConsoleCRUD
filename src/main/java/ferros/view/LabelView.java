@@ -2,6 +2,7 @@ package ferros.view;
 
 import ferros.controller.LabelController;
 import ferros.model.Label;
+import ferros.model.PostStatus;
 
 import java.util.Scanner;
 
@@ -12,7 +13,7 @@ public class LabelView  {
 
 
 
-    private final String CRUDMassage = "Chose action: \n" +
+    private final String CRUDMassage = "Chose action in Label: \n" +
             "1.Create \n" +
             "2.Show all \n" +
             "3.Show by ID \n" +

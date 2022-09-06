@@ -34,4 +34,7 @@ public class WriterController {
     public void printWriterList(List<Writer> writers){
         writerRepository.printList(writers);
     }
+    public boolean isWriterIdValid(Integer id){
+       return writerRepository.isValidId( id);
+    }
 }

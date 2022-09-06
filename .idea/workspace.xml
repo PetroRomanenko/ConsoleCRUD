@@ -4,19 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38d97704-d038-44af-b201-3cbf0db316dd" name="Changes" comment="Fully realized Label entity&#10;and Console for Label">
+    <list default="true" id="38d97704-d038-44af-b201-3cbf0db316dd" name="Changes" comment="Fully realized Label, Post and Writer &#10;have Null poiter EX in writer and Post">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/controller/LabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/controller/LabelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/controller/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/controller/WriterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/controller/WriterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Label.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/model/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/model/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/repository/GenericRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/GenericRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonLabelRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonWriterRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonWriterRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/LabelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/LabelView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/PostView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/PostView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ferros/view/WriterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ferros/view/WriterView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/labels.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/labels.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/writers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/writers.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662025933244</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fully realized Label, Post and Writer &#10;have Null poiter EX in writer and Post">
+      <created>1662378639101</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662378639101</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,40 +205,67 @@
     <MESSAGE value="Mentor Changed my project" />
     <MESSAGE value="Fully realized Label entity" />
     <MESSAGE value="Fully realized Label entity&#10;and Console for Label" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully realized Label entity&#10;and Console for Label" />
+    <MESSAGE value="Fully realized Label, Post and Writer &#10;have Null poiter EX in writer and Post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fully realized Label, Post and Writer &#10;have Null poiter EX in writer and Post" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ferros/Main.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ferros/view/MainView.java</url>
           <line>10</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ferros/view/LabelView.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ferros/controller/PostController.java</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/view/WriterView.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/view/WriterView.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java</url>
+          <line>48</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="25" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ferros/repository/gson/JsonPostRepositoryImpl.java</url>
+          <line>21</line>
+          <properties class="ferros.repository.gson.JsonPostRepositoryImpl" method="getAllPostInternal">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

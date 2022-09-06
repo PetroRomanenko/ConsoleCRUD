@@ -13,7 +13,7 @@ public class WriterView {
     private Scanner scanner = new Scanner(System.in);
     private WriterController controller = new WriterController();
 
-    private final String CRUDMassage = "Chose action: \n" +
+    private final String CRUDMassage = "Chose category in Writer: \n" +
             "1.Create \n" +
             "2.Show all \n" +
             "3.Show by ID \n" +
@@ -36,9 +36,13 @@ public class WriterView {
     }
 
     public void findWriterById(){
+
         System.out.println("Enter ID of desired Writer: ");
         Integer lookedId = scanner.nextInt();
         scanner.skip("\n");
+
+
+
 
         Writer foundWriter = controller.findWriterById(lookedId);
         System.out.println("Desired Writer: " + foundWriter);
@@ -52,8 +56,8 @@ public class WriterView {
     public void updateWriter(){
         System.out.println("Enter Writer id: ");
         Integer updatedWriterId=scanner.nextInt();
-        scanner.skip("/n");
-        System.out.println("");
+        System.out.println("Hi3");
+        scanner.skip("\n");
 
         System.out.println("Enter new writer First Name: ");
         String updatedFirstName = scanner.nextLine();
@@ -71,9 +75,12 @@ public class WriterView {
         System.out.println("Enter Writer Id: ");
         Integer deletedWriterID = scanner.nextInt();
         scanner.skip("\n");
-        Writer writer = controller.findWriterById(deletedWriterID);
-        controller.deleteWriterById(deletedWriterID);
-        System.out.println(writer + "  successfully deleted");
+        if (controller.isWriterIdValid(deletedWriterID)) {
+            Writer writer = controller.findWriterById(deletedWriterID);
+            controller.deleteWriterById(deletedWriterID);
+            System.out.println(writer + "  successfully deleted");
+        } else System.out.println("Wrong Id or don`t exist, chose again");
+
     }
 
     public void showMenuMassage() {

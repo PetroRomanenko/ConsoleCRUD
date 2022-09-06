@@ -2,7 +2,9 @@ package ferros.repository.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import ferros.model.Label;
 import ferros.model.Post;
+import ferros.model.PostStatus;
 import ferros.repository.PostRepository;
 
 import java.io.IOException;
@@ -20,7 +22,7 @@ public class JsonPostRepositoryImpl implements PostRepository {
     private List<Post>  getAllPostInternal(){
         try {
             String jsonString = Files.readString(POST_FILE_PATH);
-            Type typeOfList = new TypeToken<ArrayList<Post>>(){}.getClass();
+            Type typeOfList = new TypeToken<ArrayList<Post>>(){}.getType();
             return gson.fromJson(jsonString,typeOfList);
         }catch (IOException e){
             e.printStackTrace();
@@ -63,9 +65,29 @@ public class JsonPostRepositoryImpl implements PostRepository {
         post.setId(newId);
         post.setCreated(getCurrentTime(post));
 
+        //Change
+        post.setUpdated(getCurrentTime(post)*2);
+
         postList.add(post);
+
         writePostsToFile(postList);
         return post;
+    }
+
+    public Post addLabelToPostAndUpdateJson(Post post,Integer id){
+        List<Post> postList = getAllPostInternal();
+        List<Label> labelList =getLabelsForPost(id);
+        post.setLabels(labelList);
+        writePostsToFile(postList);
+        return post;
+    }
+    private List<Label> getLabelsForPost(Integer id) {
+        JsonLabelRepositoryImpl repository = new JsonLabelRepositoryImpl();
+        Label label = repository.getById(id);
+        List<Label> labelList = new ArrayList<>();
+        labelList.add(label);
+        return labelList;
+
     }
 
     @Override
@@ -75,6 +97,7 @@ public class JsonPostRepositoryImpl implements PostRepository {
             if (postItr.getId().equals(post.getId())){
                 postItr.setContent(post.getContent());
                 postItr.setUpdated(getCurrentTime(post));
+                postItr.setStatus(PostStatus.UNDER_REVIEW);
             }
         }
         writePostsToFile(postList);
@@ -97,5 +120,10 @@ public class JsonPostRepositoryImpl implements PostRepository {
             count++;
         }
 
+    }
+
+    @Override
+    public boolean isValidId(Integer id) {
+        return false;
     }
 }

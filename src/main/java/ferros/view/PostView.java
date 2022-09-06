@@ -2,6 +2,7 @@ package ferros.view;
 
 import ferros.controller.PostController;
 import ferros.model.Post;
+import ferros.model.PostStatus;
 
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class PostView {
     private Scanner scanner = new Scanner(System.in);
     private PostController controller = new PostController();
 
-    private final String CRUDMassage = "Chose action: \n" +
+    private final String CRUDMassage = "Chose action in Post: \n" +
             "1.Create \n" +
             "2.Show all \n" +
             "3.Show by ID \n" +
@@ -51,8 +52,15 @@ public class PostView {
         System.out.println("Change name of Post: ");
         String updatedPostName = scanner.nextLine();
 
-        Post updatedPost = new Post(updatedPostID, updatedPostName);
-        controller.update(updatedPost);
+        LabelView labelView = new LabelView();
+
+        System.out.println("Chose id of Label: ");
+        labelView.showAllLabels();
+        Integer labelId = scanner.nextInt();
+        scanner.skip("\n");
+
+        Post updatedPost = new Post(updatedPostID, updatedPostName, PostStatus.UNDER_REVIEW);
+        controller.update(updatedPost,labelId);
     }
 
     public void deletePostByID() {

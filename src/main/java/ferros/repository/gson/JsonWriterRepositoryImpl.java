@@ -74,6 +74,7 @@ public class JsonWriterRepositoryImpl implements WriterRepository {
                 writerItr.setLastName(writer.getLastName());
             }
         }
+        writeWritersToFile(writerList);
         return writer;
     }
 
@@ -93,4 +94,18 @@ public class JsonWriterRepositoryImpl implements WriterRepository {
             count++;
         }
     }
+
+    public boolean isValidId(Integer id){
+        boolean isValid=false;
+        if (id>0){
+            List<Writer> writerList = getAllWritersInternal();
+            for( Writer writer:writerList){
+                if (writer.getId().equals(id)){
+                    isValid=true;
+                break;}
+            }
+        }
+        return isValid;
+    }
+
 }

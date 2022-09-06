@@ -94,4 +94,9 @@ public class JsonLabelRepositoryImpl implements LabelRepository {
             count++;
         }
     }
+
+    @Override
+    public boolean isValidId(Integer id) {
+        return false;
+    }
 }

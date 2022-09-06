@@ -1,6 +1,7 @@
 package ferros.controller;
 
 import ferros.model.Label;
+import ferros.model.PostStatus;
 import ferros.repository.LabelRepository;
 import ferros.repository.gson.JsonLabelRepositoryImpl;
 
@@ -26,6 +27,7 @@ public class LabelController {
         labelRepository.update(label);
      return label;
     }
+
     public void deleteLabelByID(Integer id){
         labelRepository.deleteById(id);
     }

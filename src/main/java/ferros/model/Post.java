@@ -1,5 +1,6 @@
 package ferros.model;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -8,21 +9,53 @@ public class Post {
     private String content;
     private Long created;
     private Long updated;
+    private PostStatus status;
     private List<Label> labels;
+
+    public PostStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(PostStatus status) {
+        this.status = status;
+    }
 
     public Post() {
     }
 
-    public Post(Integer id, String content) {
+    public Post(Integer id, String content, Long created, PostStatus status, List<Label> labels) {
         this.id = id;
         this.content = content;
+        this.created = created;
+        this.status = status;
+        this.labels = labels;
     }
 
-    public Post(Integer id, String content, Long created, Long updated) {
+    public Post(Integer id, String content, PostStatus status) {
+        this.id = id;
+        this.content = content;
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Post{" +
+                "id=" + id +
+                ", content='" + content + '\'' +
+                ", created=" + new Date(created) +
+                ", updated=" + new Date(updated) +
+                ", status=" + status +
+                ", labels=" + labels +
+                '}';
+    }
+
+    public Post(Integer id, String content, Long created, Long updated, PostStatus status) {
         this.id = id;
         this.content = content;
         this.created = created;
         this.updated = updated;
+        this.status = status;
     }
 
     public Integer getId() {
@@ -39,20 +72,12 @@ public class Post {
         if (o == null || getClass() != o.getClass()) return false;
 
         Post post = (Post) o;
-
-        if (!Objects.equals(id, post.id)) return false;
-        if (!Objects.equals(content, post.content)) return false;
-        if (!Objects.equals(created, post.created)) return false;
-        return Objects.equals(updated, post.updated);
+        return id.equals(post.id);
     }
 
     @Override
     public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (content != null ? content.hashCode() : 0);
-        result = 31 * result + (created != null ? created.hashCode() : 0);
-        result = 31 * result + (updated != null ? updated.hashCode() : 0);
-        return result;
+        return Objects.hashCode(id);
     }
 
     public String getContent() {

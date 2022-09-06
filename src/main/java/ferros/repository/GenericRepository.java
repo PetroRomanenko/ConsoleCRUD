@@ -11,4 +11,6 @@ interface GenericRepository <T,ID>{
 
     void printList(List<T> list);
 
+     boolean isValidId(Integer id);
+
 }
